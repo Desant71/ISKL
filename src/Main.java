@@ -31,7 +31,7 @@ public class Main {
             }
             try {
                 int productNumber = Integer.parseInt(clientChoice[0]) - 1;//номер продукта
-                if (productNumber >= products.length || productNumber <= 0) {
+                if (productNumber >= products.length || productNumber < 0) {
                     System.out.println("Такого номера продукта нет, смотри внимательней");
                     continue;
                 }
